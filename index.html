@@ -1,7 +1,1313 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .download-btn {
+      display: flex;
+      width: 15em;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.7s ease;
+
+    }
+
+
+    .download-btn:hover {
+      background-color: #fed793;
+      font-size: 17px;
+      transition: background-color 0.7s ease;
+      color: black;
+
+    }
+  </style>
+  <title>Shivam's Portfolio</title>
+
+  <link rel="shortcut icon" href="2.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600&display=swap" rel="stylesheet">
+</head>
+
+<body bgcolor="black">
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!-- <img src="./assets/images/my-avatar.png" alt="Javiya Shivam" width="80"> -->
+          <div class="image-container">
+            <img src="./assets/images/my-avatar.png" alt="Original Image">
+            <img class="hover-image avatar-box" src="./assets/images/Shivam.png" alt="Hover Image">
+          </div>
+        </figure>
+
+
+        <div class="info-content">
+          <h1 class="name" title="Javiya Shivam">Javiya Shivam</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:javiyashivam70@gmail.com" class="contact-link">javiyashivam70@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 9909870870" class="contact-link">+91 9909870870</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="12-01-2003">January 12, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gandhinagar, Gujrat, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/shivam-javiya/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+
+          <li class="social-item">
+            <a href="https://github.com/ShivamJaviya" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/shivam_javiya?s=09" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/mr.j_s_j?igsh=MTkyYjE1aWNpNTN0ZQ==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello, I'm Shivam Javiya. I'm a problem solver and I enjoy building better web experiences.
+          </p>
+
+          <p>
+            currently pursuing my Master of Science in Information Technology at DAIICT.
+            I completed my Bachelor's degree at Charusat University of Science and Technology. My educational background
+            has equipped me with a strong foundation in various programming languages and technologies such as C++, C,
+            Java, Database management-(DBMS) , PHP, JavaScript, CSS ,HTML and more.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+        <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+        <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+        </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <!-- <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div> -->
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+
+        <!-- <a href="Shivam_Javiya_resume.pdf" class="download-btn" download> 📎 &nbsp; Download CV</a> -->
+
+
+
+        <a href="Shivam_Javiya_resume.pdf" class="download-btn" download>
+          <img src="./assets/images/icon-resume.png" alt="Icon" class="icon">
+          <p>Download CV</p>
+        </a>
+
+
+        <br>
+        <br>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master of Science in Information Technology</h4>
+
+              <span>2023 — Pursuing</span>
+
+              <p class="timeline-text">
+                Dhirubhai Ambani Institute of Information and Communication Technology.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Computer Applications</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Charotar University of Science and Technology.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school of &nbsp;Tapovan school </h4>
+
+              <span>2018 - 2020</span>
+
+              <p class="timeline-text">
+                12th commerce.
+              </p>
+
+            </li>
+
+          </ol>
+          <!-- 
+        </section>
+
+        <section class="timeline"> 
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Creative director</h4>
+
+              <span>2015 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+          </ol> -->
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JAVA</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">DSA</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database Management Systems </h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #project
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Shivam's Project</h2>
+        </header>
+
+        <section class="project-posts">
+
+          <ul class="project-posts-list">
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Artifyai.git" target="_blank">
+
+                <figure class="project-banner-box">
+
+
+
+                  <img src="./assets/images/project-9.jpg" alt="ArtifyAI" loading="lazy" target="_blank">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Artifyai AI tools</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">June - August, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Artifyai AI</h3>
+
+                  <p class="project-text">
+                    ArtifyAI is an AI-driven web application that integrates various AI models such as ChatGPT, Gemini,
+                    and image generation tools.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/vishalthadani/G3_Krackit/tree/master" target="_blank">
+
+                <figure class="project-banner-box">
+
+
+
+                  <img src="./assets/images/1.png" alt="Career counselling" loading="lazy" target="_blank">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Career counselling Website </p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fed - May, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Krackit - Career counselling</h3>
+
+                  <p class="project-text">
+                    Krackit is basically a career counseling website. Its purpose is to guide students in determining
+                    which career path is the best fit for them.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Apple_product_sell_website.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/product2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Apple Product Selling website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">March-May, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title"> i - Product Selling</h3>
+
+                  <p class="project-text">
+                    I built an e-commerce website that essentially sells Apple products.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/TechPurchasePro.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-3.jpeg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">TechPurchase Pro</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">August - Septemder, 2020</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">TechPurchase Pro</h3>
+
+                  <p class="project-text">
+                    I built a console-based project in which I included customer requirements to suggest the
+                    best-fitting product for them. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Health-Website.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/project-4.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Health Care website</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">September, 2021</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">HardCore Fitness</h3>
+
+                  <p class="project-text">
+                    I built this website for my college project. It's a healthcare platform featuring tools to monitor
+                    calorie intake and maintenance of daily calorie goals. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://shivamjaviya.github.io/old_style-Calculator-/" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/Project-5.jpeg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">Basic Calculator</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23"> Octomber, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Old Style Calculator</h3>
+
+                  <p class="project-text">
+                    I developed a classic, basic calculator to demonstrate my CSS proficiency and showcase a vintage
+                    design aesthetic. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/ATM-System.git" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/6-Project.jpeg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">ATM System With mysql </p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">April, 2024</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">ATM System</h3>
+
+                  <p class="project-text">
+                    I developed an ATM system in Java, leveraging libraries to execute CRUD operations, with all data
+                    seamlessly stored in a MySQL database. </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+
+            <li class="project-post-item">
+              <a href="https://github.com/ShivamJaviya/Olympics-Database-Management-System" target="_blank">
+
+                <figure class="project-banner-box">
+                  <img src="./assets/images/7-Project.png" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="project-content">
+
+                  <div class="project-meta">
+                    <p class="project-category">DataBase Of Olympic</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Decmber, 2023</time>
+                  </div>
+
+                  <h3 class="h3 project-item-title">Data Analysis of Olympic</h3>
+
+                  <p class="project-text">
+
+                    I dedication to building this database with meticulous steps and integrating ER functionality,
+                    schemas, and SQL queries showcases your proficiency and commitment to academic excellence.
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.4972641894974!2d72.62634057482907!3d23.188541910115163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2a3c9618d2c5%3A0xc54de484f986b1fa!2sDA-IICT!5e0!3m2!1sen!2sin!4v1712394825936!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <input type="hidden" name="access_key" value="e2e13dea-21ba-444e-ab13-1144052169ad">
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
