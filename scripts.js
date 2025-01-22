@@ -77,61 +77,89 @@ function updateLanguage() {
 
 
 const translations = {
+    es: {
+        title: "Soy Santiago Delgado, Ingeniero de Software",
+        about: "Sobre Mí",
+        tech_stack: "Habilidades Técnicas",
+        about_content: `
+            Soy técnico en programación de software y actualmente estudiante de Ingeniería de Sistemas en la **Universidad Industrial de Santander** (UIS).
+
+            Tengo experiencia en el desarrollo de soluciones tecnológicas que van desde la automatización de procesos y extracción de datos hasta la implementación de modelos avanzados de **inteligencia artificial** en áreas como visión por computador, predicción y clasificación.
+
+            Mis habilidades técnicas incluyen la programación en **Python**, **C++** y **Java**, así como el desarrollo de **interfaces gráficas** y la integración de tecnologías como **Linux**, **Node.js** y bases de datos **Postgres**. Además, destaco por mi capacidad para trabajar en equipo, adaptarme a nuevos retos y buscar la mejora continua en cada proyecto.
+
+            Estoy comprometido con el aprendizaje permanente y el desarrollo de **soluciones a medida** que tengan un impacto real en las personas y las organizaciones.
+            `,
+
+        services: "Servicios",
+        ai: "Inteligencia Artificial",
+        ai_content: "Entrenamiento de modelos de inteligencia artificial para la automatización de procesos.",
+        web: "Desarrollo Web",
+        web_content: "Desarrollo de sitios web 'responsive' utilizando tecnologías modernas como HTML, CSS y JavaScript.",
+        desktop: "Desarrollo de Escritorio",
+        desktop_content: "Creación de aplicaciones para Windows y linux utilizando tecnologías como Python, Java y C++.",
+        cloud: "Computación en la Nube",
+        cloud_content: "Despliegue de aplicaciones en la nube utilizando servicios como AWS, Azure y Google Cloud.",
+        bots: "Bots de Whatsapp/Messenger",
+        bots_content: "Desarrollo de chatbots para Whatsapp y Messenger con meta developers.",
+        consultant: "Consultoría 'IT'",
+        consultant_content: "Asesoría en la implementación de tecnologías para la optimización de costos en hardware y software.",
+
+        projects: "Proyectos Principales",
+        project_bots: "Bots de Whatsapp/Messenger",
+        project_bots_content: "Bot de whatsapp y messenger para servicio al cliente.",
+        project_sarc: "Visor Médico DICOM (SARCD)",
+        project_sarc_content: "Herramienta en Python para visualizar y gestionar imágenes DICOM con una interfaz gráfica intuitiva, diseñada para facilitar el análisis médico.",
+        project_web: "Página Web Personal",
+        project_web_content: "Esta página web fue desarrollada utilizando HTML, CSS y JavaScript, con un diseño 'responsive' y un tema de modo oscuro.",
+
+        contact: "Contáctame",
+        name: "Nombre",
+        email: "Correo",
+        message: "Mensaje",
+        send: "Enviar Mensaje",
+    },
     en: {
         title: "I'm Santiago Delgado, Software Engineer",
         about: "About Me",
+        tech_stack: "Technical Skills",
         about_content:`
             I am a software programming technician and currently a Systems Engineering student at the **Industrial University of Santander** (UIS).
 
             I have experience in developing technological solutions ranging from process automation and data extraction to the implementation of advanced **artificial intelligence models** in areas such as computer vision, prediction, and classification.
 
-            My technical skills include programming in **Python**, **C++**, and **Java**, as well as **graphical interface** development and the integration of technologies like **Linux**, **Node.js**, and **PostgreSQL** databases. Additionally, I stand out for my ability to work in teams, adapt to new challenges, and strive for continuous improvement in every project.
+            My technical skills include programming in **Python**, **C++**, and **Java**, as well as **graphical interface** development and the integration of technologies like **Linux**, **Node.js**, and **Postgres** databases. Additionally, I stand out for my ability to work in teams, adapt to new challenges, and strive for continuous improvement in every project.
 
             I am committed to lifelong learning and the development of **customized solutions** that make a real impact on people and organizations.
             `,
 
         services: "Services",
+        ai: "Artificial Intelligence",
+        ai_content: "I have experience in developing AI models for computer vision, prediction, and classification.",
         web: "Web Development",
-        web_content: "I have experience in developing responsive websites using modern technologies such as HTML, CSS, and JavaScript.",
-        mobile: "Mobile Development",
-        mobile_content: "I have experience in developing mobile applications for Android and iOS using Flutter and React Native.",
+        web_content: "I develop responsive websites using modern technologies like HTML, CSS, and JavaScript.",
+        desktop: "Desktop Development",
+        desktop_content: "I create applications for Windows and Linux using technologies like Python, Java, and C++.",
         cloud: "Cloud Computing",
-        cloud_content: "I have experience in deploying applications to the cloud using services such as AWS, Azure, and Google Cloud.",
+        cloud_content: "I deploy applications in the cloud using services like AWS, Azure, and Google Cloud.",
+        bots: "Whatsapp/Messenger Bots",
+        bots_content: "I develop chatbots for Whatsapp and Messenger using meta developers.",
+        consultant: "IT Consulting",
+        consultant_content: "I provide advice on the implementation of technologies to optimize costs in hardware and software.",
 
-        projects: "Recent Projects",
+        projects: "Main Projects",
+        project_bots: "Whatsapp/Messenger Bots",
+        project_bots_content: "whatsapp and messenger bot for Customer Service",
+        project_sarc: "Medical DICOM Visor (SARCD)",
+        project_sarc_content: "Python tool for viewing and managing DICOM images with an intuitive graphical interface, designed to facilitate medical analysis.",
+        project_web: "Personal Website",
+        project_web_content: "This website was developed using HTML, CSS, and JavaScript, with a responsive design and a dark mode theme.",
+
         contact: "Contact Me",
         name: "Name",
         email: "Email",
         message: "Message",
         send: "Send Message",
     },
-    es: {
-        title: "Soy Santiago Delgado, Ingeniero de Software",
-        about: "Sobre Mí",
-        about_content: `
-            Soy técnico en programación de software y actualmente estudiante de Ingeniería de Sistemas en la **Universidad Industrial de Santander** (UIS).
-
-            Tengo experiencia en el desarrollo de soluciones tecnológicas que van desde la automatización de procesos y extracción de datos hasta la implementación de modelos avanzados de **inteligencia artificial** en áreas como visión por computador, predicción y clasificación.
-
-            Mis habilidades técnicas incluyen la programación en **Python**, **C++** y **Java**, así como el desarrollo de **interfaces gráficas** y la integración de tecnologías como **Linux**, **Node.js** y bases de datos **PostgreSQL**. Además, destaco por mi capacidad para trabajar en equipo, adaptarme a nuevos retos y buscar la mejora continua en cada proyecto.
-
-            Estoy comprometido con el aprendizaje permanente y el desarrollo de **soluciones a medida** que tengan un impacto real en las personas y las organizaciones.
-            `,
-
-        services: "Servicios",
-        web: "Desarrollo Web",
-        web_content: "Tengo experiencia en el desarrollo de sitios web 'responsive' utilizando tecnologías modernas como HTML, CSS y JavaScript.",
-        mobile: "Desarrollo Móvil",
-        mobile_content: "Tengo experiencia en el desarrollo de aplicaciones móviles para Android e iOS utilizando Flutter y React Native.",
-        cloud: "Computación en la Nube",
-        cloud_content: "Tengo experiencia en desplegar aplicaciones en la nube utilizando servicios como AWS, Azure y Google Cloud.",
-
-        projects: "Proyectos Recientes",
-        contact: "Contáctame",
-        name: "Nombre",
-        email: "Correo",
-        message: "Mensaje",
-        send: "Enviar Mensaje",
-    }
 };
 

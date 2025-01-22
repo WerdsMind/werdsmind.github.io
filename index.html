@@ -44,8 +44,33 @@
     <!-- About Section -->
     <section id="about">
         <h2 data-translate="about" class="section-title"></h2>
-        <div class="about-content">
-            <p data-translate="about_content"></p>
+        <div class="about-grid">
+            <div class="about-image">
+                <img alt="Profile Picture" src="src/assets/profile.jpeg">
+                <div class="tech-stack">
+                    <h3 data-translate="tech_stack"></h3>
+                    <div class="tech-icons">
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fab fa-java" title="Java"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-git-alt" title="Git"></i>
+                        <i class="fab fa-linux" title="Linux"></i>
+                        <i class="fab fa-docker" title="Docker"></i>
+                        <i class="fab fa-windows" title="Windows"></i>
+                        <!-- Add windows logo -->
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="bio" data-translate="about_content"></div>
+                <div class="achievements">
+                    <h3 data-translate="achievements"></h3>
+
+                </div>
+            </div>
         </div>
     </section>
 
@@ -53,20 +78,35 @@
     <section id="services">
         <h2 data-translate="services" class="section-title"></h2>
         <div class="services-grid">
+            <div class="service-card" id="ai">
+                <i class="fas fa-robot"></i>
+                <h3 data-translate="ai"></h3>
+                <p data-translate="ai_content"></p>
+            </div>
             <div class="service-card" id="web-development">
                 <i class="fas fa-laptop-code"></i>
                 <h3 data-translate="web"></h3>
                 <p data-translate="web_content"></p>
             </div>
             <div class="service-card">
-                <i class="fas fa-mobile-alt"></i>
-                <h3 data-translate="mobile"></h3>
-                <p data-translate="mobile_content"></p>
+                <i class="fas fa-desktop"></i>
+                <h3 data-translate="desktop"></h3>
+                <p data-translate="desktop_content"></p>
             </div>
             <div class="service-card">
                 <i class="fas fa-database"></i>
                 <h3 data-translate="cloud"></h3>
                 <p data-translate="cloud_content"></p>
+            </div>
+            <div class="service-card">
+                <i class="fab fa-android"></i>
+                <h3 data-translate="bots"></h3>
+                <p data-translate="bots_content"></p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-tie"></i>
+                <h3 data-translate="consultant"></h3>
+                <p data-translate="consultant_content"></p>
             </div>
         </div>
     </section>
@@ -76,19 +116,20 @@
         <h2 data-translate="projects" class="section-title"></h2>
         <div class="projects-grid">
             <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Bla bla bla bla bla</p>
+                <img alt="Bots image" src="bot.jpg">
+                <h3 data-translate="project_bots"></h3>
+                <p data-translate="project_bots_content"></p>
             </div>
             <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Bla bla bla bla bla</p>
+                <img alt="SARCD" src="sarc.jpg">
+                <h3 data-translate="project_sarc"></h3>
+                <p data-translate="project_sarc_content"></p>
             </div>
             <div class="project-card">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Bla bla bla bla bla</p>
+                <img alt="Web page" src="web.jpg">
+                <h3 data-translate="project_web"></h3>
+                <p data-translate="project_web_content"></p>
+
             </div>
         </div>
     </section>
