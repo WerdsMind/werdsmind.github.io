@@ -262,8 +262,8 @@ const translations = {
         projects: "Main Projects",
         project_bots: "Whatsapp/Messenger Bots",
         project_bots_content: "whatsapp and messenger bot for Customer Service",
-        project_sarc: "Medical DICOM Visor (SARCD)",
-        project_sarc_content: "Python tool for viewing and managing DICOM images with an intuitive graphical interface, designed to facilitate medical analysis.",
+        project_sarcd: "Medical DICOM Visor (SARCD)",
+        project_sarcd_content: "Python tool for viewing and managing DICOM images with an intuitive graphical interface, designed to facilitate medical analysis.",
         project_web: "Online store",
         project_web_content: "online store development from scratch with Angular, Spring Boot, and PostgreSQL.",
 
