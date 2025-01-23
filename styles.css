@@ -121,7 +121,6 @@ body {
 
 section {
     min-height: 100vh;
-    max-height: 100vh;
     padding: 1.5rem 2rem;
     display: flex;
     flex-direction: column;
