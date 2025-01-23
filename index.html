@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Werds Mind - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/Transparente logo blanco.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -115,45 +116,52 @@
     <section id="projects">
         <h2 data-translate="projects" class="section-title"></h2>
         <div class="projects-grid">
-            <div class="project-card">
-                <img alt="Bots image" src="bot.jpg">
+            <a class="project-card">
+                <img alt="Bots image" src="src/assets/bot.png">
                 <h3 data-translate="project_bots"></h3>
                 <p data-translate="project_bots_content"></p>
-            </div>
-            <div class="project-card">
-                <img alt="SARCD" src="sarc.jpg">
+            </a>
+            <a href="https://github.com/DGwerds/SARC" class="project-card" target="_blank"
+               rel="noopener noreferrer">
+                <img alt="SARC" src="src/assets/SARC.webp">
                 <h3 data-translate="project_sarc"></h3>
                 <p data-translate="project_sarc_content"></p>
-            </div>
-            <div class="project-card">
-                <img alt="Web page" src="web.jpg">
+            </a>
+            <a href="https://github.com/pimientoyolo125/universeGame" class="project-card" target="_blank"
+               rel="noopener noreferrer">
+                <img alt="universeGame" src="src/assets/universeGame.png">
                 <h3 data-translate="project_web"></h3>
                 <p data-translate="project_web_content"></p>
-
-            </div>
+            </a>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2 data-translate="contact" class="section-title"></h2>
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm" novalidate>
             <div class="form-group">
                 <label data-translate="name" for="name"></label>
-                <input type="text" id="name" required>
+                <input type="text" id="name" required aria-required="true">
+                <span class="error-message" id="nameError"></span>
             </div>
             <div class="form-group">
                 <label data-translate="email" for="email"></label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" required aria-required="true">
+                <span class="error-message" id="emailError"></span>
             </div>
             <div class="form-group">
                 <label data-translate="message" for="message"></label>
-                <textarea id="message" required></textarea>
+                <textarea id="message" required aria-required="true"></textarea>
+                <span class="error-message" id="messageError"></span>
             </div>
             <button data-translate="send" type="submit" class="submit-btn"></button>
         </form>
     </section>
 </main>
+<div class="loading-indicator" aria-hidden="true">
+    <div class="spinner"></div>
+</div>
 <script src="scripts.js"></script>
 </body>
 </html>

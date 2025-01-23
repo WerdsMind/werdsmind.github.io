@@ -13,6 +13,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update Toggle Text
     document.querySelector('.lang-toggle i').textContent = savedLang.toUpperCase();
+
+    // Form validation
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (validateForm()) {
+            showLoading();
+            try {
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                showSuccess();
+                contactForm.reset();
+            } catch (error) {
+                showError('An error occurred. Please try again.');
+            } finally {
+                hideLoading();
+            }
+        }
+    });
+
+    const projectCards = document.querySelectorAll('.project-card');
+
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const link = card.getAttribute('data-link');
+            if (link) {
+                console.log(link);
+                window.open(link, '_blank'); // Abre el enlace en una nueva pestaña
+            }
+        });
+    });
 });
 
 // Language Toggle Button
@@ -30,6 +61,87 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
     localStorage.setItem('theme', currentTheme);
     applyTheme(currentTheme);
 });
+
+// Redirigir al hacer clic en una service-card
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', () => {
+        document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
+function validateForm() {
+    let isValid = true;
+    const name = document.getElementById('name');
+    const email = document.getElementById('email');
+    const message = document.getElementById('message');
+
+    // Reset previous errors
+    clearErrors();
+
+    // Validate name
+    if (!name.value.trim()) {
+        showError(name, 'Name is required');
+        isValid = false;
+    }
+
+    // Validate email
+    if (!email.value.trim()) {
+        showError(email, 'Email is required');
+        isValid = false;
+    } else if (!isValidEmail(email.value)) {
+        showError(email, 'Please enter a valid email address');
+        isValid = false;
+    }
+
+    // Validate message
+    if (!message.value.trim()) {
+        showError(message, 'Message is required');
+        isValid = false;
+    }
+
+    return isValid;
+}
+
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function showError(input, message) {
+    const errorElement = document.getElementById(`${input.id}Error`);
+    input.classList.add('error');
+    errorElement.textContent = message;
+    errorElement.style.display = 'block';
+}
+
+function clearErrors() {
+    const errorElements = document.querySelectorAll('.error-message');
+    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+
+    errorElements.forEach(error => error.style.display = 'none');
+    inputs.forEach(input => input.classList.remove('error'));
+}
+
+function showLoading() {
+    document.querySelector('.loading-indicator').style.display = 'flex';
+}
+
+function hideLoading() {
+    document.querySelector('.loading-indicator').style.display = 'none';
+}
+
+function showSuccess() {
+    const successMessage = document.createElement('div');
+    successMessage.className = 'success-message';
+    successMessage.textContent = 'Message sent successfully!';
+
+    const form = document.getElementById('contactForm');
+    form.insertBefore(successMessage, form.firstChild);
+
+    setTimeout(() => {
+        successMessage.remove();
+    }, 5000);
+}
 
 // Apply Theme
 function applyTheme(theme) {
@@ -108,10 +220,10 @@ const translations = {
         projects: "Proyectos Principales",
         project_bots: "Bots de Whatsapp/Messenger",
         project_bots_content: "Bot de whatsapp y messenger para servicio al cliente.",
-        project_sarc: "Visor Médico DICOM (SARCD)",
+        project_sarc: "Visor Médico DICOM (SARC)",
         project_sarc_content: "Herramienta en Python para visualizar y gestionar imágenes DICOM con una interfaz gráfica intuitiva, diseñada para facilitar el análisis médico.",
-        project_web: "Página Web Personal",
-        project_web_content: "Esta página web fue desarrollada utilizando HTML, CSS y JavaScript, con un diseño 'responsive' y un tema de modo oscuro.",
+        project_web: "Tienda en Línea",
+        project_web_content: "Desarrollo de tienda en línea desde cero con Angular, Spring Boot y PostgreSQL.",
 
         contact: "Contáctame",
         name: "Nombre",
@@ -152,8 +264,8 @@ const translations = {
         project_bots_content: "whatsapp and messenger bot for Customer Service",
         project_sarc: "Medical DICOM Visor (SARCD)",
         project_sarc_content: "Python tool for viewing and managing DICOM images with an intuitive graphical interface, designed to facilitate medical analysis.",
-        project_web: "Personal Website",
-        project_web_content: "This website was developed using HTML, CSS, and JavaScript, with a responsive design and a dark mode theme.",
+        project_web: "Online store",
+        project_web_content: "online store development from scratch with Angular, Spring Boot, and PostgreSQL.",
 
         contact: "Contact Me",
         name: "Name",
