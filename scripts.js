@@ -14,19 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update Toggle Text
     document.querySelector('.lang-toggle i').textContent = savedLang.toUpperCase();
 
-    // Form validation
-    const contactForm = document.getElementById('contactForm');
+    emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with actual user ID
 
-    contactForm.addEventListener('submit', async (e) => {
+    document.getElementById('contactForm').addEventListener('submit', async (e) => {
         e.preventDefault();
         if (validateForm()) {
             showLoading();
             try {
-                await new Promise(resolve => setTimeout(resolve, 1500));
+                await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                    from_name: document.getElementById('name').value,
+                    from_email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                });
                 showSuccess();
                 contactForm.reset();
             } catch (error) {
-                showError('An error occurred. Please try again.');
+                showError('Failed to send message. Please try again.');
+                console.error('Email send error:', error);
             } finally {
                 hideLoading();
             }
@@ -45,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 // Language Toggle Button
 document.querySelector('.lang-toggle').addEventListener('click', () => {
@@ -219,7 +224,7 @@ const translations = {
 
         projects: "Proyectos Principales",
         project_bots: "Bots de Whatsapp/Messenger",
-        project_bots_content: "Bot de whatsapp y messenger para servicio al cliente.",
+        project_bots_content: "Bot de whatsapp y messenger 24/7 para servicio al cliente.",
         project_sarcd: "Visor Médico DICOM (SARCD)",
         project_sarcd_content: "Herramienta en Python para visualizar y gestionar imágenes DICOM con una interfaz gráfica intuitiva, diseñada para facilitar el análisis médico.",
         project_web: "Tienda en Línea",
@@ -261,7 +266,7 @@ const translations = {
 
         projects: "Main Projects",
         project_bots: "Whatsapp/Messenger Bots",
-        project_bots_content: "whatsapp and messenger bot for Customer Service",
+        project_bots_content: "24/7 whatsapp and messenger bot for Customer Service",
         project_sarcd: "Medical DICOM Visor (SARCD)",
         project_sarcd_content: "Python tool for viewing and managing DICOM images with an intuitive graphical interface, designed to facilitate medical analysis.",
         project_web: "Online store",
@@ -274,4 +279,3 @@ const translations = {
         send: "Send Message",
     },
 };
-
