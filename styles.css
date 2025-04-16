@@ -15,7 +15,7 @@
     --bg-primary-rgb: 255, 255, 255;
     --bg-secondary-rgb: 240, 240, 240;
     --orb-primary: calc(0.9 * 0.4);
-    --orb-size: 60%;
+    --orb-size:50%;
 }
 
 /* Dark theme variables */
@@ -63,9 +63,9 @@ body::after {
     z-index: -1;
     background:
         radial-gradient(circle at 20% 30%, rgba(235, 0, 139, var(--orb-primary)) 0%, transparent var(--orb-size)),
-        radial-gradient(circle at 40% 80%, rgba(235, 0, 139, var(--orb-primary)) 0%, transparent var(--orb-size)),
+        radial-gradient(circle at 30% 80%, rgba(235, 0, 139, var(--orb-primary)) 0%, transparent var(--orb-size)),
         radial-gradient(circle at 80% 70%, rgba(143, 51, 196, var(--orb-primary)) 0%, transparent var(--orb-size)),
-        radial-gradient(circle at 60% 10%, rgba(143, 51, 196, var(--orb-primary)) 0%, transparent var(--orb-size));
+        radial-gradient(circle at 70% 10%, rgba(143, 51, 196, var(--orb-primary)) 0%, transparent var(--orb-size));
     pointer-events: none;
 }
 
