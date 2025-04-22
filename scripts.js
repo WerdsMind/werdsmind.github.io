@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Load or Detect Preferences
     const savedLang = localStorage.getItem('language') || detectUserLanguage();
-    const savedTheme = localStorage.getItem('theme') || detectUserTheme();
+    const savedTheme = localStorage.getItem('theme') || 'dark';
 
     // Apply Language
     currentLang = savedLang;
@@ -164,10 +164,6 @@ function applyTheme(theme) {
     }
 }
 
-// Detect User Theme
-function detectUserTheme() {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-}
 
 function detectUserLanguage() {
     const userLang = navigator.language || navigator.languages[0];
